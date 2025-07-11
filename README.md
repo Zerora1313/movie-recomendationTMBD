@@ -14,7 +14,7 @@ This system recommends movies that are **similar in content** to a selected movi
 
 ---
 
-## 🧠 How It Works (Simple Explanation)
+## 🧠 How It Works 
 
 1. **Movie Features Combined**: We combine features like **genre, cast, director, overview, etc.** into a single string.
 
@@ -24,26 +24,28 @@ This system recommends movies that are **similar in content** to a selected movi
 
 4. **Recommendation Output**: For any given movie, we return the **top 5-10 most similar movies**.
 
-❓ Common Confusions 
-What is content-based filtering?
+---
+
+## ❓ Common Confusions 
+1. What is content-based filtering?
 It recommends movies based only on their own details — like genre, cast, overview, etc.
 It doesn’t depend on other users' ratings or behavior.
 
-Why are we using cosine similarity?
+2. Why are we using cosine similarity?
 It's a math method to measure how similar two movies are based on their content.
 The more similar the words (features), the closer they are.
 
-What does CountVectorizer do?
+3. What does CountVectorizer do?
 It converts text (like genres, overview, keywords) into numbers so that we can compare them using cosine similarity.
 
-Why didn’t we use ratings or reviews?
+4. Why didn’t we use ratings or reviews?
 That’s part of collaborative filtering, which is a different type of recommendation system.
 This project is focused on content-based filtering only.
 
-Will it recommend only same-genre movies?
+5. Will it recommend only same-genre movies?
 Not exactly — since we combine multiple features like cast, overview, and keywords, the system can find deeper similarities, not just genre.
 
-
+---
 ## ✅ How to Run It
 1. Clone the repo:
 ```bash
